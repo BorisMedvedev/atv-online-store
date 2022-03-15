@@ -33,9 +33,16 @@ address {
   font-style: inherit;
 }
 
+img {
+  display: block;
+}
+
 body {
-  color: #2F3035;
-  font-family: sans-serif;
+  color: #2f3035;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .container {
@@ -49,4 +56,12 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 122px;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
 }
