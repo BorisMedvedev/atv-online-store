@@ -39,7 +39,7 @@ img {
 
 body {
   color: #2f3035;
-  font-family: "SFProDisplay-Regular", sans-serif;
+  font-family: "SFProDisplay", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -56,6 +56,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 122px;
+  font-weight: 700;
 }
 
 .menu__item {
@@ -64,4 +65,35 @@ body {
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header__box,
+.user-list {
+  display: flex;
+}
+
+.user-list {
+  padding-right: 23px;
+}
+
+.header__address {
+  position: relative;
+  margin-right: 56px;
+  padding-left: 30px;
+}
+
+.header__address-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 6px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icons/address-icon.svg);
+  background-size: contain;
+}
+
+.user-list__item:not(:last-child) {
+  margin-right: 10px;
 }
