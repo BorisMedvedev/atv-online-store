@@ -191,6 +191,7 @@ body {
 .banner-section__slider-btnprev {
   left: 20px;
 }
+
 .banner-section__slider-btnnext {
   right: 20px;
 }
@@ -212,18 +213,116 @@ body {
   padding: 0;
   margin: 0;
   font-size: 0;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 50px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
+
+.banner-section .slick-dots button:hover {
+  background-color: #1c62cd;
+
+}
+
 .banner-section .slick-active button {
   background-color: #fff;
 }
 
 .sale-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 265px;
   text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  transition: box-shadow 0.2s, border-color 0.2s, color 2s;
+}
+
+.sale-item:hover {
+  box-shadow: -2px 2px 10px rgba(50, 50, 50, 0.3);
+  border-color: transparent;
+}
+
+
+
+.sale-item__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  align-items: flex-start;
+}
+
+.sale-item__info {
+  padding: 8px 20px;
+  color: #fff;
+  background-color: #1c62cd;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+.sale-item__prise {
+  margin-right: 6px;
+  text-align: right;
+}
+
+.prise {
+  font-family: "Barlow", sans-serif;
+}
+
+.sale-item__prise-new {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #1c62cd;
+}
+
+.sale-item__prise-old {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4;
+}
+
+.sale-item__prise-old::before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/icons/old-line.svg);
+  width: 61px;
+  height: 20px;
+  display: block;
+  top: 0px;
+  right: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.sale-item__title {
+  max-width: 192px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto;
+}
+
+.sale-item__footer {
+  padding: 25px 20px;
+  background-color: #F0F0F4;
+  font-size: 18px;
+}
+
+.sale-item__footer-data {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  color: #1C62CD;
+  transition: color 0.2s;
+}
+
+.sale-item:hover .sale-item__footer-data{
+  color: red;
 }
