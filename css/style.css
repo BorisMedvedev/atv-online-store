@@ -41,6 +41,11 @@ body {
   line-height: 24px;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -114,7 +119,7 @@ body {
 .basket__num {
   position: absolute;
   top: 10px;
-  right: -12px;
+  left: 24px;
   width: 20px;
   height: 20px;
   background-color: #1c62cd;
@@ -176,6 +181,10 @@ body {
 
 .banner-section__slider {
   max-width: 870px;
+}
+
+.banner-section__slider-img {
+  object-fit: cover;
 }
 
 .banner-section__slider-btn {
@@ -302,12 +311,16 @@ body {
 
 }
 
+.sale-item__img {
+  object-fit: contain;
+}
+
 .sale-item__title {
   max-width: 192px;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  margin: 0 auto;
+  margin: 0 auto 7px auto;
 }
 
 .sale-item__footer {
