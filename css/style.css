@@ -360,7 +360,7 @@ img {
 
 .search__tabs-btn--active {
   background-color: #1c62cd;
-  color:#fff;
+  color: #fff;
   box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.25);
 }
 
