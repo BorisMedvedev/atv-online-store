@@ -405,3 +405,21 @@ img {
   color: #fff;
   cursor: pointer;
 }
+
+.categories__item {
+  max-width: 370px;
+}
+
+.categories__link {
+  padding: 20px 40px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+
+.categories__img {
+  object-fit: contain;
+}
