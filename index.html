@@ -143,15 +143,16 @@
     </section>
 
     <div class="search page-section">
+      <h2 class="sr-only">Лучший Интернет магазин Квадроциклов</h2>
       <div class="container">
         <div class="search__inner">
           <div class="search__tabs">
-            <a class="search__tabs-btn search__tabs-btn--active" href="#tab-1">Поиск по номеру</a>
-            <a class="search__tabs-btn" href="#tab-2">Поиск по марке</a>
-            <a class="search__tabs-btn" href="#tab-3">Поиск по названию товара</a>
+            <a class="tab search__tabs-btn tab--active" href="#tab-1">Поиск по номеру</a>
+            <a class="tab search__tabs-btn" href="#tab-2">Поиск по марке</a>
+            <a class="tab search__tabs-btn" href="#tab-3">Поиск по названию товара</a>
           </div>
           <div class="search__content">
-            <div id="tab-1" class="search__content-item search__content-item--active">
+            <div id="tab-1" class="tabs-content search__content-item tabs-content--active">
               <form class="search__content-form">
                 <label class="search__content-label">
                   <input class="search__content-input" type="text" placeholder="Введите номер" />
@@ -161,7 +162,7 @@
                 </button>
               </form>
             </div>
-            <div id="tab-2" class="search__content-item">
+            <div id="tab-2" class="tabs-content search__content-item">
               <form class="search__content-form">
                 <label class="search__content-label">
                   <input class="search__content-input" type="text" placeholder="Введите марку" />
@@ -171,7 +172,7 @@
                 </button>
               </form>
             </div>
-            <div id="tab-3" class="search__content-item">
+            <div id="tab-3" class="tabs-content search__content-item">
               <form class="search__content-form">
                 <label class="search__content-label">
                   <input class="search__content-input" type="text" placeholder="Введите название товара" />
@@ -186,25 +187,114 @@
       </div>
     </div>
 
-    <section class="categories page-section">
+    <section class="categories categories-mb">
       <div class="container">
         <ul class="categories__inner">
-
           <li class="categories__item">
             <a href="" class="categories__link">
               <div class="categories__info">
                 <h3 class="categories__title">Квадроциклы</h3>
                 <span class="categories__text">Подробее</span>
               </div>
-              <img class="categories__img" src="./images/product/product-1.png" alt="" width="150" height="100">
+              <img class="categories__img" src="./images/product/product-1.png" alt="" width="130" height="95" />
             </a>
           </li>
-
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <div class="categories__info">
+                <h3 class="categories__title">Гидроциклы</h3>
+                <span class="categories__text">Подробее</span>
+              </div>
+              <img class="categories__img" src="./images/product/product-2.png" alt="" width="130" height="95" />
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <div class="categories__info">
+                <h3 class="categories__title">Катера</h3>
+                <span class="categories__text">Подробее</span>
+              </div>
+              <img class="categories__img" src="./images/product/product-3.png" alt="" width="130" height="95" />
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <div class="categories__info">
+                <h3 class="categories__title">Снегоходы</h3>
+                <span class="categories__text">Подробее</span>
+              </div>
+              <img class="categories__img" src="./images/product/product-4.png" alt="" width="130" height="95" />
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <div class="categories__info">
+                <h3 class="categories__title">Вездеходы</h3>
+                <span class="categories__text">Подробее</span>
+              </div>
+              <img class="categories__img" src="./images/product/product-5.png" alt="" width="130" height="95" />
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <div class="categories__info">
+                <h3 class="categories__title">Двигатели</h3>
+                <span class="categories__text">Подробее</span>
+              </div>
+              <img class="categories__img" src="./images/product/product-6.png" alt="" width="130" height="95" />
+            </a>
+          </li>
         </ul>
-
       </div>
     </section>
 
+    <section class="popular-products page-section">
+      <div class="container">
+        <div class="popular-products__inner">
+          <h2 class="title">Популярные товары</h2>
+          <div class="tabs-wrapper">
+            <div class="popular-products__tabs tabs">
+              <a class="popular-products__tab tab tab--active" href="#btn-1">запчасти</a>
+              <a class="popular-products__tab tab" href="#btn-2">моторы</a>
+              <a class="popular-products__tab tab" href="#btn-3">шины</a>
+              <a class="popular-products__tab tab" href="#btn-4">электроника</a>
+              <a class="popular-products__tab tab" href="#btn-5">инструменты</a>
+              <a class="popular-products__tab tab" href="#btn-6">аксессуары</a>
+            </div>
+            <div class="popular-products__container tabs-container">
+
+              <div id="btn-1" class="popular-products__content tabs-content tabs-content--active">
+
+                <ul class="product-slider">
+
+                  <li class="product-slider__item">
+                    <article class="product-card">
+                      <a class="product-card__link" href="#">
+                        jikhjikhoihkh
+                      </a>
+                    </article>
+                  </li>
+
+                </ul>
+
+              </div>
+              <div id="btn-2" class="popular-products__content tabs-content">
+
+                2
+              </div>
+              <div id="btn-3" class="popular-products__content tabs-content">
+
+                3
+              </div>
+              <div id="btn-4" class="popular-products__content tabs-content">
+
+                4
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -213,3 +303,12 @@
 </body>
 
 </html>
+
+<!-- <div class="tabs-wrapper">
+   <div class="tabs">
+     <a class="tab tab--active" href="#"></a>
+   </div>
+   <div class="tabs-container">
+     <div class="tabs-content"></div>
+   </div>
+ </div> -->

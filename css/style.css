@@ -59,6 +59,13 @@ img {
   overflow: hidden;
 }
 
+.title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
 .page-section {
   margin-bottom: 80px;
 }
@@ -339,10 +346,6 @@ img {
   color: rgb(253, 6, 6);
 }
 
-.sale-item:hover .sale-item__footer {
-  background-color: rgb(211, 245, 133);
-}
-
 .search__tabs {
   margin-bottom: 35px;
 }
@@ -358,7 +361,7 @@ img {
   box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.25);
 }
 
-.search__tabs-btn--active {
+.search__tabs-btn.tab--active {
   background-color: #1c62cd;
   color: #fff;
   box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.25);
@@ -368,7 +371,7 @@ img {
   display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tabs-content--active {
   display: block;
 }
 
@@ -406,20 +409,81 @@ img {
   cursor: pointer;
 }
 
+.categories-mb {
+  margin-bottom: 60px;
+}
+
+.categories__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
 .categories__item {
   max-width: 370px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .categories__link {
-  padding: 20px 40px 8px 20px;
+  padding: 20px 20px 16px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background: #FFFFFF;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  transition: box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.categories__link:hover {
+  border-color: transparent;
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.categories__info {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.categories__title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.categories__text {
+  position: relative;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.categories__text::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/check-mark.svg);
+  width: 6px;
+  height: 9px;
+  display: block;
+  top: 5px;
+  left: 67px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .categories__img {
   object-fit: contain;
+}
+
+
+
+
+.popular-products__tabs {
+  margin-bottom: 25px;
 }
