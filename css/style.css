@@ -44,7 +44,7 @@ body {
 img {
   width: 100%;
   display: block;
-}
+  }
 
 .sr-only {
   position: absolute;
