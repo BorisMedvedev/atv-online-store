@@ -40,8 +40,7 @@ address {
 
 
 body {
-  display: flex;
-  flex-direction: column;
+
   background-color: white;
   color: #2f3035;
   font-family: "SFProDisplay", sans-serif;
@@ -50,9 +49,7 @@ body {
   line-height: 24px;
 }
 
-.main {
-  flex-grow: 1;
-}
+
 
 img {
   width: 100%;
