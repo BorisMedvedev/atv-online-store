@@ -1,3 +1,8 @@
+body,
+html {
+  height: 100%;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -33,12 +38,20 @@ address {
   font-style: inherit;
 }
 
+
 body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   color: #2f3035;
   font-family: "SFProDisplay", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 img {
@@ -403,7 +416,7 @@ img {
   font-size: 16px;
 }
 
-.search__content-btn {
+.btn {
   padding: 17px 40px;
   border: none;
   background-color: #1c62cd;
@@ -711,4 +724,101 @@ img {
   background-color: #1c62cd;
   box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
   color: #fff;
+}
+
+.footer {
+  padding: 42px 0 27px;
+  background-color: #F0F0F4;
+}
+
+.footer__top {
+  margin-bottom: 40px;
+  line-height: 17px;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer__top-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 295px;
+}
+
+.footer__top-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__top-title--width {
+  max-width: 250px;
+  line-height: 22px;
+}
+
+.footer__top-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top-input {
+  background-color: #fff;
+  padding: 8px 12px;
+  border: none;
+}
+
+.footer__top-input::placeholder {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+
+}
+
+.footer-list__link {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer__top-btn {
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  border-radius: 0;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  padding-left: 87px;
+}
+
+.footer__bottom-link {
+  line-height: 12px;
+  color: #48494d;
+  font-size: 12px;
+  line-height: 24px;
+
+}
+
+.footer__bottom-link:not(:last-child) {
+  margin-right: 81px;
+
 }
