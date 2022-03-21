@@ -60,6 +60,8 @@ img {
   overflow: hidden;
 }
 
+
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -158,6 +160,10 @@ img {
 
 .header__bottom {
   margin-bottom: 80px;
+}
+
+.header-mb {
+  margin-bottom: 40px;
 }
 
 .menu-categories {
@@ -818,4 +824,35 @@ img {
 .footer__bottom-link:not(:last-child) {
   margin-right: 81px;
 
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C4C4C4;
+}
+
+.breadcrumbs__item::after {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icons/check-mark.svg');
+  width: 6px;
+  height: 9px;
+  display: block;
+  top: 5px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
 }
