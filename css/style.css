@@ -878,6 +878,11 @@ img {
   margin-bottom: 45px;
 }
 
+.catalog__fiter-btn {
+  padding: 5px 20px;
+  background-color: #f0f0f4;
+}
+
 .catalog__fiter-select {
   margin-right: 34px;
 }
