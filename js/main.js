@@ -54,8 +54,8 @@ $(function () {
       // settings: "unslick"
       // instead of a settings object
     ]
-    
-    
+
+
 
     // autoplay: true,
     // autoplaySpeed: 2000,
@@ -83,7 +83,7 @@ $(function () {
   });
 
 
-
+  $('.fiter-sryles').styler();
 
 
 
