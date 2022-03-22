@@ -994,3 +994,92 @@ img {
   color: #2f3035;
   border-bottom: 2px solid #1c62cd;
 }
+
+.aside-filter__item-drop {
+  margin-bottom: 40px;
+}
+
+
+.aside-filter__title {
+  display: inline-block;
+  margin: 0;
+  padding-left: 26px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.aside-filter__title-arrow {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.aside-filter__title-arrow::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icons/arrow-bottom.svg");
+  width: 12px;
+  height: 8px;
+  display: block;
+  bottom: 8px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+  transform: rotate(0);
+  transition: transform 0.2s;
+}
+
+.aside-filter__title-arrow--active::before {
+  transform: rotate(180deg);
+}
+
+.aside-filter__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-filter__label {
+  width: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.jq-checkbox,
+.jq-radio {
+  vertical-align: -2px;
+  width: 14px;
+  height: 14px;
+  margin: 0 8px 0 0;
+  border: 1px solid #C4C4C4;
+  border-radius: 2px;
+  box-shadow: none;
+  background: #fff;
+  opacity: 1;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: #1C62CD;
+  border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 8px;
+  height: 6px;
+  margin: 4px 0 0 3px;
+  background-image: url('../images/icons/check.svg');
+  border-bottom: none;
+  border-left: none;
+  border-radius: 0;
+  transform: rotate(0);
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}

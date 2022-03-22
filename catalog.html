@@ -126,7 +126,7 @@
               <button class="catalog__fiter-btn">еще</button>
             </div>
             <div class="catalog__fiter-sorting">
-              <select class="catalog__fiter-select">
+              <select class="catalog__fiter-select fiter-sryles">
                 <option value="">По полулярности</option>
                 <option value="">По цене</option>
                 <option value="">По рейтингу</option>
@@ -154,17 +154,47 @@
                       <ul class="aside-filter__list">
 
                         <li class="aside-filter__item-drop">
-                          <p class="aside-filter__title">Наличие</p>
+                          <p class="aside-filter__title aside-filter__title-arrow aside-filter__title-arrow--active">
+                            Наличие</p>
                           <div class="aside-filter__box">
                             <label class="aside-filter__label">
-                              <input name="contact" class="aside-filter__input fiter-sryles" type="radio" checked>
+                              <input class="aside-filter__input fiter-sryles" type="checkbox" checked>
                               В наличии
                             </label>
                             <label class="aside-filter__label">
-                              <input name="contact" class="aside-filter__input fiter-sryles" type="radio">
+                              <input class="aside-filter__input fiter-sryles" type="checkbox">
                               На заказ
                             </label>
                           </div>
+                        </li>
+
+                        <li class="aside-filter__item-drop">
+                          <p class="aside-filter__title aside-filter__title-arrow aside-filter__title-arrow--active">
+                            Новинки</p>
+                          <div class="aside-filter__box">
+                            <label class="aside-filter__label">
+                              <input name="contact" class="aside-filter__input fiter-sryles" type="radio" checked>
+                              Все
+                            </label>
+                            <label class="aside-filter__label">
+                              <input name="contact" class="aside-filter__input fiter-sryles" type="radio">
+                              Новинки
+                            </label>
+                            <label class="aside-filter__label">
+                              <input name="contact" class="aside-filter__input fiter-sryles" type="radio">
+                              Акции
+                            </label>
+                          </div>
+                        </li>
+
+                        <li class="aside-filter__item-drop">
+                          <p class="aside-filter__title aside-filter__title-arrow aside-filter__title-arrow--active">
+                            Цена
+                          </p>
+                          <label class="aside-filter__label">
+                            <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                              data-min="0" data-max="500000" data-from="0" data-to="250000" data-grid="true" />
+                          </label>
                         </li>
 
                       </ul>

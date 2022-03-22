@@ -86,6 +86,13 @@ $(function () {
   $('.fiter-sryles').styler();
 
 
+  $('.aside-filter__title-arrow').on('click', function () {
+    $(this).toggleClass('aside-filter__title-arrow--active');
+    $(this).next().slideToggle(200);
+  });
+
+
+  $(".js-range-slider").ionRangeSlider();
 
 
 });
