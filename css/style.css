@@ -1036,7 +1036,7 @@ img {
 .aside-filter__box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+
 }
 
 .aside-filter__box--wrap {
@@ -1049,7 +1049,26 @@ img {
   cursor: pointer;
 }
 
+.aside-filter__search {
+  width: 100%;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+}
+
+.aside-filter__search::placeholder {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #BDBEC2;
+}
+
 .aside-filter__link {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
