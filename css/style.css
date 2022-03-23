@@ -1036,6 +1036,10 @@ img {
 .aside-filter__box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.aside-filter__box--wrap {
   flex-wrap: wrap;
 }
 
@@ -1043,6 +1047,13 @@ img {
   width: 50%;
   font-size: 14px;
   cursor: pointer;
+}
+
+.aside-filter__link {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #1C62CD;
 }
 
 .jq-checkbox,
@@ -1143,27 +1154,89 @@ img {
 }
 
 .irs--flat {
-
   margin-bottom: 60px;
 }
 
 .irs-min::before {
   position: absolute;
-  content: 'от';
+  content: "от";
   left: 0;
   font-weight: 400;
   font-size: 14px;
-  color: #C4C4C4;
-
-
+  color: #c4c4c4;
 }
 
 .irs-max::before {
   position: absolute;
-  content: 'до';
+  content: "до";
   left: 0;
   font-weight: 400;
   font-size: 14px;
-  color: #C4C4C4;
+  color: #c4c4c4;
+}
+
+.aside-filter__choice-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.aside-filter__choice-box:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.aside-filter__choice-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog__fiter-sorting .jq-selectbox__select {
+  height: 100%;
+  padding: 0 46px 0 20px;
+  border: 1px solid #D7D9DF;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2F3035;
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-image: url('../images/icons/arrow-bottom.svg');
+  width: 12px;
+  height: 8px;
+}
+
+.aside-filter__choice-box .jq-selectbox__select {
+  height: 100%;
+  padding: 0 46px 0 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #48494D;
 
 }

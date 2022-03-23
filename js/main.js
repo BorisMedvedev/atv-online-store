@@ -50,17 +50,9 @@ $(function () {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+
     ]
 
-
-
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
-    // nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/icons/arrow-next.svg" alt=""></button>'
   });
 
 
@@ -88,7 +80,7 @@ $(function () {
 
   $('.aside-filter__title-arrow').on('click', function () {
     $(this).toggleClass('aside-filter__title-arrow--active');
-    $(this).next().slideToggle(200);
+    $(this).next().slideToggle(350);
   });
 
 
