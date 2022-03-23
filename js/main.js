@@ -92,7 +92,15 @@ $(function () {
   });
 
 
-  $(".js-range-slider").ionRangeSlider();
 
+  $(".aside-filter__slider").ionRangeSlider({
+    type: "double",
+    postfix: "₽",
+    grid: false,
+    min: 100000,
+    max: 500000,
+    from: 150000,
+    to: 400000
+  });
 
 });
