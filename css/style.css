@@ -1036,7 +1036,6 @@ img {
 .aside-filter__box {
   display: flex;
   justify-content: space-between;
-
 }
 
 .aside-filter__box--wrap {
@@ -1054,25 +1053,25 @@ img {
   padding: 8px 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
 
 .aside-filter__search::placeholder {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #BDBEC2;
+  color: #bdbec2;
 }
 
 .aside-filter__link {
-  display: block;
+  display: flex;
   margin-top: 15px;
   width: 100%;
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
-  color: #1C62CD;
+  color: #1c62cd;
 }
 
 .jq-checkbox,
@@ -1197,7 +1196,7 @@ img {
 .aside-filter__choice-box {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .aside-filter__choice-box:not(:last-child) {
@@ -1212,18 +1211,23 @@ img {
   line-height: 19px;
 }
 
+.catalog__fiter-sorting {
+  display: flex;
+  align-items: center;
+}
+
 .catalog__fiter-sorting .jq-selectbox__select {
   height: 100%;
   padding: 0 46px 0 20px;
-  border: 1px solid #D7D9DF;
+  border: 1px solid #d7d9df;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #2F3035;
+  color: #2f3035;
 }
 
 .jq-selectbox__trigger {
@@ -1239,7 +1243,7 @@ img {
   border-top: none;
   border-right: none;
   border-left: none;
-  background-image: url('../images/icons/arrow-bottom.svg');
+  background-image: url("../images/icons/arrow-bottom.svg");
   width: 12px;
   height: 8px;
 }
@@ -1251,11 +1255,94 @@ img {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font-family: 'SF Pro Display', sans-serif;
-  font-family: 'Barlow', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #48494D;
+  color: #48494d;
+}
 
+.jq-selectbox li:hover {
+  background-color: #1c62cd;
+  color: #fff;
+}
+
+.aside-filter__send-btn {
+  margin: 0 auto 15px;
+  display: block;
+  padding: 15px 85px;
+  background-color: #1c62cd;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.aside-filter__choice-select-box {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.aside-filter__choice-select-box .jq-selectbox__select {
+  width: 250px;
+  height: 32px;
+  padding: 0 25px 0 30px;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #c4c4c4;
+
+}
+
+.aside-filter__reset-btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 13px;
+  text-decoration-line: underline;
+  color: #c4c4c4;
+}
+
+.btn-checkbox .aside-filter__label {
+  position: relative;
+  height: 25px;
+  width: 60px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+  color: #bdbec2;
+}
+
+.btn-checkbox .btn-checkbox__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.btn-checkbox .jq-checkbox {
+  height: 25px;
+  width: 60px;
+  background: #f0f0f4;
+  border: none;
+}
+
+.btn-checkbox .jq-checkbox.checked~.btn-checkbox__text {
+  color: #fff;
+}
+
+.btn-checkbox .jq-checkbox.checked {
+  background: #1c62cd;
+}
+
+.btn-checkbox .jq-checkbox.checked .jq-checkbox__div {
+  display: none;
 }
