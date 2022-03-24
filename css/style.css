@@ -306,6 +306,9 @@ img {
 }
 
 .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 6px 20px;
   color: #fff;
   background-color: #1c62cd;
@@ -581,11 +584,7 @@ img {
   opacity: 1;
 }
 
-.product-card__sale {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .product-card__btn-svg {
   position: absolute;
@@ -1380,4 +1379,117 @@ img {
   margin-bottom: 40px;
   text-align: center;
   font-size: 13px;
+}
+
+
+.product-page__inner {
+  display: flex;
+
+}
+
+.product-page__img-box {
+  position: relative;
+  padding-top: 40px;
+  margin-right: 100px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+}
+
+.product-page__sale {
+  padding: 15px 30px;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  border-radius: 3px;
+}
+
+.product-page__img {
+  margin-bottom: 25px;
+  object-fit: contain;
+}
+
+.product-page__prise-old {
+  position: relative;
+  margin-bottom: 10px;
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.product-page__prise-old::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icons/line-black.svg');
+  width: 127px;
+  height: 26px;
+  display: block;
+  top: 1px;
+  right: 41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product-page__prise-new {
+  margin-bottom: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2F3035;
+}
+
+.product-page__prise-discount {
+  font-size: 15px;
+  color: #1C62CD;
+}
+
+.product-page__content {
+  max-width: 480px;
+  width: 100%;
+}
+
+.product-page__title {
+
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.product-page__code {
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #2F3035;
+  opacity: 0.6;
+}
+
+.product-page__buttons {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.product-page__buttons-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.product-page__btn {
+  position: relative;
+  width: 24px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.product-page__btn--favorite {
+  background-image: url('../images/icons/heart-icon.svg')
+}
+
+.product-page__btn--rating {
+  background-image: url('../images/icons/rating.svg')
 }
