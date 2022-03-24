@@ -95,4 +95,17 @@ $(function () {
     to: 400000
   });
 
+  $(".catalog__btn--grid").on('click', function () {
+    $(this).addClass('catalog__btn--active');
+    $('.catalog__btn--line').removeClass('catalog__btn--active');
+    $('.catalog__inner-item').removeClass('catalog__inner-item--list');
+  });
+
+  $(".catalog__btn--line").on('click', function () {
+    $(this).addClass('catalog__btn--active');
+    $('.catalog__btn--grid').removeClass('catalog__btn--active');
+    $('.catalog__inner-item').addClass('catalog__inner-item--list');
+  });
+
+
 });

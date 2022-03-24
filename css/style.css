@@ -890,15 +890,14 @@ img {
   background-size: contain;
   background-position: center;
   vertical-align: text-top;
+  opacity: 0.3;
 }
 
-.catalog__btn:focus {
-  opacity: 0.25;
+.catalog__btn--active {
+  opacity: 1;
 }
 
-.catalog__btn:active {
-  opacity: 0.25;
-}
+
 
 .catalog__btn--grid {
   margin-right: 10px;
@@ -914,13 +913,18 @@ img {
 }
 
 .catalog__inner-aside {
+  display: flex;
+  flex-direction: column;
   max-width: 290px;
   width: 100%;
+  flex-grow: 0;
   margin-right: 8px;
 }
 
 .catalog__inner-product {
   display: flex;
+  max-width: 872px;
+  width: 100%;
   flex-wrap: wrap;
   margin-bottom: 40px;
   justify-content: space-between;
@@ -928,6 +932,18 @@ img {
 
 .catalog__inner-item {
   margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.catalog__inner-item.catalog__inner-item--list {
+  width: 100%;
+  transition: width 0.5s;
+
+}
+
+.catalog__inner-item.catalog__inner-item--list .product-card {
+  width: 100%;
+  transition: width 0.5s;
 }
 
 .pagination {
@@ -1279,27 +1295,6 @@ img {
   color: #fff;
 }
 
-.aside-filter__choice-select-box {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.aside-filter__choice-select-box .jq-selectbox__select {
-  width: 250px;
-  height: 32px;
-  padding: 0 25px 0 30px;
-  border: 1px solid transparent;
-  border-bottom-color: transparent;
-  border-radius: 0;
-  background: none;
-  box-shadow: none;
-  text-align: center;
-  font-family: "SF Pro Display", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  color: #c4c4c4;
-
-}
 
 .aside-filter__reset-btn {
   display: block;
@@ -1345,4 +1340,44 @@ img {
 
 .btn-checkbox .jq-checkbox.checked .jq-checkbox__div {
   display: none;
+}
+
+.aside-filter__choice-select-box .aside-filter__title-arrow::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icons/arrow-bottom.svg');
+  width: 12px;
+  height: 8px;
+  display: block;
+  bottom: 6px;
+  left: 232px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+  transform: rotate(0);
+  transition: transform 0.2s;
+}
+
+.aside-filter__choice-select-box .aside-filter__title-arrow--active::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icons/arrow-bottom.svg');
+  width: 12px;
+  height: 8px;
+  display: block;
+  bottom: 6px;
+  left: 232px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+
+.aside-filter__choice-select-box {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 13px;
 }
