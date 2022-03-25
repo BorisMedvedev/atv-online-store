@@ -109,6 +109,18 @@ $(function () {
 
 
 
+  $(".menu-btn").on('click', function () {
+    $('.menu-mobile').toggleClass('menu-mobile--active');
+
+  });
+
+  $(".menu-mobile__link").on('click', function () {
+    $('.menu-mobile').removeClass('menu-mobile--active');
+
+  });
+
+
+
 
   $(".ratio").rateYo({
     ratedFill: "#1C62CD",
