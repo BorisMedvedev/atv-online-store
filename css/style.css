@@ -1699,8 +1699,9 @@ img {
   line-height: 24px;
 }
 
-.tabs-table__operating-mode span {
-  display: block;
+.tabs-table__operating-mode-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .tabs-table__available {
@@ -1710,5 +1711,9 @@ img {
 
 .tabs-table__quantity {
   width: 130px;
-  margin-right: 100px;
+
+}
+
+.tabs-table__button {
+  margin-left: auto;
 }
