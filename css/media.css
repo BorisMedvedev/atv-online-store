@@ -77,6 +77,15 @@
     max-width: 100%;
     object-fit: cover;
   }
+
+  .mobile-overflow {
+    width: 1000px;
+  }
+
+  .tabs-wrapper {
+    overflow-x: scroll;
+    padding: 20px 0 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -94,6 +103,7 @@
 
   .banner-section .container {
     padding: 0;
+
   }
 
   .banner-section__item {
@@ -121,9 +131,5 @@
 
   .banner-section .container {
     padding: 5px;
-  }
-
-  .banner-section__item {
-    max-width: 100%;
   }
 }
