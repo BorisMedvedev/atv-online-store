@@ -233,11 +233,13 @@ img {
 }
 
 .banner-section__slider {
+  position: relative;
   max-width: 870px;
 }
 
 .banner-section__slider-img {
   object-fit: cover;
+
 }
 
 .banner-section__slider-btn,
@@ -303,6 +305,7 @@ img {
   border-radius: 3px;
   transition: box-shadow 0.2s, border-color 0.2s, color 2s,
     background-color 0.2s;
+  max-height: 400px;
 }
 
 .sale-item:hover {
@@ -1777,6 +1780,7 @@ img {
 }
 
 .menu-list__wrapper {
+  display: none;
   width: 100%;
   overflow-x: scroll;
   background-color: #F0F0F4;
@@ -1786,7 +1790,7 @@ img {
 .menu-list {
   width: 100%;
   display: none;
-  padding: 15px 10px;
+  padding: 15px 15px;
   align-items: center;
   font-weight: 700;
   width: 450px;
