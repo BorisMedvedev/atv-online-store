@@ -33,6 +33,7 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
+        arrows: false,
         dots: true
       }
     },
@@ -43,6 +44,7 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
+        arrows: false,
         dots: true
       }
     },
@@ -51,6 +53,7 @@ $(function () {
       settings: {
         dots: true,
         slidesToShow: 1,
+        arrows: false,
         slidesToScroll: 1
       }
     },
@@ -59,6 +62,7 @@ $(function () {
       settings: {
         dots: true,
         slidesToShow: 1,
+        arrows: false,
         slidesToScroll: 1
       }
     }
