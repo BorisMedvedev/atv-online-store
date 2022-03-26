@@ -4,14 +4,12 @@ $(function () {
     dots: true,
     prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/icons/arrow-next.svg" alt=""></button>',
-    responsive: [
-      {
-        breakpoint: 968,
-        settings: {
-          arrows: false
-        }
-      },
-    ]
+    responsive: [{
+      breakpoint: 968,
+      settings: {
+        arrows: false
+      }
+    },]
   });
 
   $(".product-slider").slick({
@@ -21,43 +19,49 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     speed: 300,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          dots: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          dots: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+    responsive: [{
+      breakpoint: 1339,
+      settings: {
+        dots: true,
+        arrows: false
       }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
 
     ]
 
