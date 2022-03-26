@@ -104,18 +104,22 @@
 
 @media (max-width: 440px) {
   .banner-section__slider {
-    min-height: 160px;
+    min-height: 200px;
   }
 
   .banner-section__slider-img {
-    min-height: 160px;
+    min-height: 200px;
   }
 
   .banner-section__slider-img {
-    min-height: 160px;
+    min-height: 200px;
   }
 
   .banner-section .container {
     padding: 0;
+  }
+
+  .banner-section__item {
+    max-width: 100%;
   }
 }
