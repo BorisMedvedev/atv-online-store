@@ -41,6 +41,17 @@ $(function () {
       breakpoint: 1024,
       settings: {
         dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 868,
+      settings: {
+        dots: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
