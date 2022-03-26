@@ -3,11 +3,34 @@
     text-align: center;
   }
 
-  .slick-dots {
-    display: flex;
+  .product-slider .slick-dots li {
+    display: inline-block;
     justify-content: center;
+    padding: 0 10px;
+  }
+
+  .product-slider .slick-dots li button {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .product-slider.slick-active button {
+
+    background-color: #1C62CD;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s;
   }
 }
+
 
 @media (max-width: 1200px) {
   .menu__item:not(:last-child) {
