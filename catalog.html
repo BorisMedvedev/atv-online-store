@@ -22,11 +22,18 @@
 
 <body>
   <div class="site">
+
     <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
+
             <nav class="menu">
+              <button class="menu-btn">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+              </button>
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="menu__link" href="#">Магазины</a>
@@ -39,8 +46,14 @@
                 </li>
               </ul>
             </nav>
-            <a class="logo" href="/">
-              <img class="logo__svg" src="./images/logo.svg" alt="логотип" width="80" height="76" />
+
+            <a class="logo" href="#">
+
+              <picture>
+                <source srcset="images/logo-modail.svg" media="(max-width: 968px)" width="80" height="18">
+                <source srcset="images/logo.svg"> <img src="images/logo.svg" alt="логотип">
+              </picture>
+
             </a>
             <div class="header__box">
               <address class="header__address">
@@ -69,7 +82,117 @@
           </div>
         </div>
       </div>
-      <div class="header__bottom header-mb">
+
+
+      <ul class="menu-mobile">
+
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/user-icon.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Войти</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/user-icon.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Регистрация</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/heart-icon.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Избранное</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/basket-icon-black.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Корзина</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/shop.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Магазины</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/percent.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Акции</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">
+            <img class="menu-mobile__img" src="./images/icons/delivery.svg" alt="" width="20" height="20">
+            <span class="menu-mobile__text">Доставка и оплата</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Квадроциклы</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Катера</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Гидроциклы</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Лодки</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Вездеходы</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Снегоходы</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Двигатели</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item menu-mobile__item--left">
+          <a href="#" class="menu-mobile__link">
+            <span class="menu-mobile__text">Запчасти</span>
+          </a>
+        </li>
+
+        <address class="menu-mobile__address">
+          <a class="menu-mobile__address-link" href="#">
+            Москва, ул. Науки 25</a>
+        </address>
+
+      </ul>
+
+      <div class="menu-list__wrapper">
+
+        <ul class="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Магазины</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Акции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка и оплата</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="header__bottom">
         <div class="container">
           <ul class="menu-categories">
             <li class="menu-categories__item">
