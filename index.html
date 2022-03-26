@@ -722,16 +722,19 @@
           </div>
         </div>
       </section>
-      <!--
+
       <div class="banner page-section">
         <div class="container">
           <a href="#">
-            <img src="./images/main-banner.jpg" alt="" />
+            <picture>
+              <source srcset="images/main-banner2.jpg" media="(max-width: 640px)">
+              <source srcset="images/main-banner.jpg"> <img src="images/main-banner2.jpg" alt="">
+            </picture>
           </a>
         </div>
       </div>
 
-       <section class="popular-products page-section">
+      <!--  <section class="popular-products page-section">
         <div class="container popular-products__container">
           <div class="popular-products__inner">
             <h2 class="title">С этим товаром покупают</h2>
