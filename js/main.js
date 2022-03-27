@@ -158,5 +158,9 @@ $(function () {
 
   });
 
+  $('.footer__top-title').on('click', function () {
+    $(this).next().slideToggle(300);
+  });
+
 
 });
