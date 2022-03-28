@@ -838,6 +838,10 @@ img {
   margin-right: 30px;
 }
 
+.social-list__item--youtube {
+  transform: translateY(-4px);
+}
+
 .footer__bottom {
   display: flex;
   justify-content: center;

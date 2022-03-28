@@ -166,12 +166,23 @@
     display: none;
   }
 
+  .footer {
+    background-color: #F9F9FC;
+  }
+
   .footer__top-title--border {
 
     padding: 15px 0 0;
 
-    border-top: 2px solid #141414;
+    border-top: 2px solid #F0F0F4;
 
+  }
+
+  .footer-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7F7F7F;
   }
 
 }
