@@ -162,6 +162,7 @@ $(function () {
   });
 
   $('.footer__top-title').on('click', function () {
+    $(this).toggleClass('footer__top-title-arrow--active');
     $(this).next().slideToggle(300);
   });
 
