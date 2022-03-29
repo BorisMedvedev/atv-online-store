@@ -569,7 +569,7 @@ img {
   transition: box-shadow 0.2s, border-color 0.2s, color 0.2s;
   border-radius: 3px;
   width: 270px;
-  max-height: 400px;
+  min-height: 400px;
 }
 
 .product-card:hover {
@@ -906,6 +906,7 @@ img {
 }
 
 .catalog__fiter-select {
+  width: 180px;
   margin-right: 34px;
 }
 
@@ -939,9 +940,13 @@ img {
 .catalog__inner-aside {
   display: flex;
   flex-direction: column;
-  width: 290px;
+
 
   margin-right: 8px;
+}
+
+.tabs-wrapper--no-scroll {
+  width: 290px;
 }
 
 .catalog__inner-product {
