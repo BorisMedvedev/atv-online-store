@@ -167,4 +167,10 @@ $(function () {
   });
 
 
+  $('.aside-btn').on('click', function () {
+
+    $(this).next().slideToggle(500);
+  });
+
+
 });

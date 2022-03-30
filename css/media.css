@@ -149,9 +149,21 @@
 
     margin-right: 10px;
   }
+
+
 }
 
 @media (max-width: 640px) {
+
+  .aside-btn {
+    display: block;
+
+  }
+
+  .catalog__inner-aside {
+    display: none;
+  }
+
   .banner-section__slider {
     min-height: 200px;
   }

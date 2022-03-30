@@ -958,6 +958,19 @@ img {
   justify-content: space-between;
 }
 
+.aside-btn {
+  display: none;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1C62CD;
+  margin-bottom: 30px;
+}
+
 .catalog__inner-item {
   margin-bottom: 30px;
   transition: all 0.5s;
