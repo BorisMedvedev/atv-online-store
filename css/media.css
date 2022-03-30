@@ -150,7 +150,33 @@
     margin-right: 10px;
   }
 
+  .catalog__fiter-sorting button {
+    display: none;
+  }
 
+  .catalog__fiter-select {
+
+    margin-right: 0;
+  }
+
+
+
+
+
+}
+
+@media (max-width: 740px) {
+  .catalog__fiter {
+    display: block;
+  }
+
+  .catalog__fiter-pagination {
+    margin-bottom: 25px;
+  }
+
+  .catalog__fiter-pagination {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -361,6 +387,10 @@
   .catalog__inner-product {
     justify-content: center;
 
+  }
+
+  .pagination__list-item:not(:last-child) {
+    margin-right: 5px;
   }
 
 }

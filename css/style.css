@@ -894,6 +894,11 @@ img {
   margin-bottom: 45px;
 }
 
+.catalog__fiter-pagination-wrapper {
+  overflow-x: scroll;
+  padding: 15px 0;
+}
+
 .catalog__fiter-btn {
   padding: 4px 22px;
   background-color: #f0f0f4;
