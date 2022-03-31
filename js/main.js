@@ -90,11 +90,12 @@ $(function () {
 
     $($(this).siblings()).removeClass("tab--active");
 
-    $($(this).parent()).siblings().find("div").removeClass("tabs-content--active");
+    $($(this).closest('.tabs-wrapper')).siblings().find("div").removeClass("tabs-content--active");
 
 
     $(this).addClass("tab--active");
     $($(this).attr("href")).addClass("tabs-content--active");
+    $('.product-slider').slick('setPosition');
 
   });
 
