@@ -44,6 +44,14 @@
     justify-content: space-around;
   }
 
+  .product-page__inner {
+    flex-wrap: wrap;
+  }
+
+  .product-page__inner {
+
+    justify-content: center;
+  }
 
 
 }
@@ -53,6 +61,45 @@
     margin-bottom: 25px;
     width: 100%;
   }
+
+
+
+  .product-page__wrapper {
+    display: none;
+  }
+
+  .product-page__img-box {
+    order: 1;
+  }
+
+  .product-page__item-btn {
+    margin: 0 auto;
+
+    margin-top: 25px;
+  }
+
+
+
+  .product-page__img-box {
+
+    margin-right: 0;
+
+  }
+
+  .product-page__item-btn-mobile {
+    display: block;
+  }
+
+  .tabs-table__form {
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs-table__label {
+    margin-top: 15px;
+  }
+
 }
 
 @media (max-width: 968px) {
@@ -159,9 +206,56 @@
     margin-right: 0;
   }
 
+  .tabs-table__text {
+    font-size: 14px;
+
+  }
+
+  .tabs-table__label {
+
+    font-size: 14px;
+
+  }
+
+  .tabs-table__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .tabs-table__list-item {
+    display: block;
+  }
+
+  .tabs-table__list-item-address {
+    display: none;
+  }
 
 
+  .tabs-table__list-item div {
+    margin-bottom: 15px;
+  }
 
+  .tabs-table__text {
+    margin-bottom: 15px;
+  }
+
+  .tabs-table__container {
+    padding-left: 0;
+  }
+
+  .tabs-table__tabs-scroll {
+    overflow-x: scroll;
+  }
+
+  .tabs-table__tabs {
+    display: block;
+  }
+
+  .mobile-overflow-box {
+    display: block;
+    width: 800px;
+    padding-left: 10px;
+  }
 
 }
 
@@ -305,6 +399,10 @@
 
   }
 
+  .tabs-table__input-btn::before {
+    display: none;
+  }
+
 
 }
 
@@ -393,11 +491,28 @@
     margin-right: 5px;
   }
 
-}
-
-@media (max-width: 320px) {
-  .catalog__inner-product {
-
-    max-width: 290px;
+  .product-page__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
   }
-}
+
+  .product-page__img {
+    margin-bottom: 0;
+
+    max-height: 250px;
+  }
+
+  .tabs-table__form {
+
+    padding-right: 0;
+
+
+  }
+
+  @media (max-width: 320px) {
+    .catalog__inner-product {
+
+      max-width: 290px;
+    }
+  }

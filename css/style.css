@@ -1596,6 +1596,10 @@ img {
   border-radius: 3px;
 }
 
+.product-page__item-btn-mobile {
+  display: none;
+}
+
 .tabs-table__tabs {
   display: flex;
   justify-content: space-around;
@@ -1603,6 +1607,8 @@ img {
   margin-bottom: 50px;
   background-color: #f0f0f4;
 }
+
+
 
 .tabs-table__tab {
   padding: 0 5px 5px 0;
@@ -1806,6 +1812,12 @@ img {
   align-items: center;
   font-weight: 700;
   width: 450px;
+}
+
+.mobile-overflow-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .product-slider .slick-dots li {
