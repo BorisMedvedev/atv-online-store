@@ -2509,7 +2509,7 @@ img {
   }
 
   .banner-section__item {
-    box-shadow: 3px 3px 20px maroon;
+    box-shadow: 3px 3px 20px rgb(50 50 50 / 25%);
     border: none;
   }
 
