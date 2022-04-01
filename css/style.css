@@ -2035,13 +2035,7 @@ img {
   border: 1.5px solid #58595c;
 }
 
-.tabs-table__label .checkbox.checked,
-.jq-radio.checked {
-  width: 16px;
-  height: 16px;
-  background: transparent;
-  border: 1.5px solid #1c62cd;
-}
+
 
 .tabs-table__label .jq-radio.checked .jq-radio__div {
   position: absolute;
@@ -2054,6 +2048,14 @@ img {
   transform: translate(-50%, -50%);
   background: #1c62cd;
   border: none;
+}
+
+.tabs-table__label .checkbox.checked,
+.jq-radio.checked {
+  width: 16px;
+  height: 16px;
+  background: #1c62cd;
+  border: 1.5px solid #1c62cd;
 }
 
 .tabs-table__list-item {
