@@ -1,89 +1,128 @@
 $(function () {
- 
-    $(".banner-section__slider").slick({
-      dots: true,
-      prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
-      nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/icons/arrow-next.svg" alt=""></button>',
-      responsive: [{
-        breakpoint: 968,
-        settings: {
-          arrows: false
-        }
-      },]
-    });
- 
 
- 
-    $(".product-slider").slick({
-      prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/icons/arrow-prev-black.svg" alt=""></button>',
-      nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/icons/arrow-next-black.svg" alt=""></button>',
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      speed: 300,
-      responsive: [{
-        breakpoint: 1339,
-        settings: {
-          dots: true,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          dots: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          dots: true,
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          infinite: true,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 868,
-        settings: {
-          dots: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          arrows: false,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          arrows: false,
-          slidesToScroll: 1
-        }
+  $(".banner-section__slider").slick({
+    dots: true,
+    prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/icons/arrow-next.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 968,
+      settings: {
+        arrows: false
       }
+    },]
+  });
 
-      ]
 
-    });
- 
+
+  $(".product-slider").slick({
+    prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/icons/arrow-prev-black.svg" alt=""></button>',
+    nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/icons/arrow-next-black.svg" alt=""></button>',
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 300,
+    responsive: [{
+      breakpoint: 1339,
+      settings: {
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },]
+  });
+
+  $(".banner-section__slider").slick({
+    dots: true,
+    prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/icons/arrow-next.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 968,
+      settings: {
+        arrows: false
+      }
+    },]
+  });
+
+
+
+  $(".product-slider").slick({
+    prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/icons/arrow-prev-black.svg" alt=""></button>',
+    nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/icons/arrow-next-black.svg" alt=""></button>',
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 300,
+    responsive: [{
+      breakpoint: 1339,
+      settings: {
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 868,
+      settings: {
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1
+      }
+    },]
+  });
+
+
 
 
   $(".tab").on("click", function (e) {
