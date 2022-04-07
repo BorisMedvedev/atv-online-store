@@ -1,5 +1,5 @@
 $(function () {
-  $(window).on('load', function () {
+ 
     $(".banner-section__slider").slick({
       dots: true,
       prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./images/icons/arrow-prev.svg" alt=""></button>',
@@ -11,9 +11,9 @@ $(function () {
         }
       },]
     });
-  });
+ 
 
-  $(window).on('load', function () {
+ 
     $(".product-slider").slick({
       prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/icons/arrow-prev-black.svg" alt=""></button>',
       nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/icons/arrow-next-black.svg" alt=""></button>',
@@ -83,7 +83,7 @@ $(function () {
       ]
 
     });
-  });
+ 
 
 
   $(".tab").on("click", function (e) {
